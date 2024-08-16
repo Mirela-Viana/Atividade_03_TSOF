@@ -30,5 +30,12 @@ describe('Página Inicial', () => {
     cy.getByData('pontos').contains('Programa de pontos')
     cy.getByData('segurosDispositivos').contains('Seguro Dispositivos')
   })
+
+  it('Deve renderizar a p' , () => {
+    cy.getByData('ContaDigital').contains('Isso mesmo, nossa conta é digital, sem custo fixo e mais que isso: sem tarifa de manutenção.')
+    cy.getByData('acesso24h').contains('Você pode sacar gratuitamente 4x por mês de qualquer Banco 24h.')
+    cy.getByData('acumuloPontos').contains('Você pode acumular pontos com suas compras no crédito sem pagar mensalidade!')
+    cy.getByData('DispoMoveis').contains('Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
+  })
 })
 
