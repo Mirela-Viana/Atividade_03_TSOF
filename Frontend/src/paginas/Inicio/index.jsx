@@ -25,7 +25,7 @@ export default function Inicio() {
             <h2>Vantagens do nosso banco:</h2>
             <div className={estilos.vantagens__itens}>
               <div className={estilos.vantagens__item}>
-                <img src={presente} alt="ícone de um presente" />
+                <img src={presente} alt="ícone de um presente" data-test="imagem1"/>
                 <h3>Conta e cartão gratuitos</h3>
                 <p>
                   Isso mesmo, nossa conta é digital, sem custo fixo e mais que
@@ -33,15 +33,15 @@ export default function Inicio() {
                 </p>
               </div>
               <div className={estilos.vantagens__item}>
-                <img src={saque} alt="ícone de uma mão segurando um dinheiro" />
+                <img src={saque} alt="ícone de uma mão segurando um dinheiro" data-test="imagem2"/>
                 <h3>Saques sem custo</h3>
                 <p>
                   Você pode sacar gratuitamente 4x por mês de qualquer Banco
                   24h.
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
-                <img src={estrela} alt="ícone de uma estrela" />
+              <div className={estilos.vantagens__item} data-test="Vantagens">
+                <img src={estrela} alt="ícone de uma estrela" data-test="imagem3" />
                 <h3>Programa de pontos</h3>
                 <p>
                   Você pode acumular pontos com suas compras no crédito sem
@@ -52,7 +52,7 @@ export default function Inicio() {
                 <img
                   src={dispositivo}
                   alt="ícone de um dispositivo como notebook"
-                />
+                  data-test="imagem4"/>
                 <h3>Seguro Dispositivos</h3>
                 <p>
                   Seus dispositivos móveis (computador e laptop) protegidos por
