@@ -11,12 +11,17 @@ describe('Página Inicial', () => {
     cy.checkTextInVantagem('Vantagens')
   })
 
-  it('Deve renderizar a iamgem' , () => {
+  it('Deve renderizar a imagem' , () => {
     cy.getByData('imagem1')
     cy.getByData('imagem2')
     cy.getByData('imagem3')
     cy.getByData('imagem4')
+    cy.getByData('imagem5')
 
+  })
+
+  it('Deve renderizar a h2' , () => {
+    cy.getByData('vantagensBanco').contains('Vantagens do nosso banco:')
   })
 })
 
