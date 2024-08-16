@@ -23,5 +23,12 @@ describe('Página Inicial', () => {
   it('Deve renderizar a h2' , () => {
     cy.getByData('vantagensBanco').contains('Vantagens do nosso banco:')
   })
+
+  it('Deve renderizar a h3' , () => {
+    cy.getByData('ContaCartao').contains('Conta e cartão gratuitos')
+    cy.getByData('saques').contains('Saques sem custo')
+    cy.getByData('pontos').contains('Programa de pontos')
+    cy.getByData('segurosDispositivos').contains('Seguro Dispositivos')
+  })
 })
 
