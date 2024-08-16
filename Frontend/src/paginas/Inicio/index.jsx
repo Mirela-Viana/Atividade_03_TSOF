@@ -9,9 +9,9 @@ import dispositivo from 'assets/dispositivo.svg';
 export default function Inicio() {
   return (
     <>
-      <div className={estilos.container}>
-        <div className={estilos.conteudo}>
-          <div className={estilos.banner}>
+      <div className={estilos.container} data-test="divContainer">
+        <div className={estilos.conteudo} data-test="divConteudo">
+          <div className={estilos.banner} data-test="divBanner">
             <h1 data-test="titulo-principal">
               Experimente mais liberdade no controle da sua vida financeira.
               Crie sua conta com a gente!
@@ -21,10 +21,10 @@ export default function Inicio() {
               alt="Gráficos e uma pessoa com dinheiro na mão"
               data-test="imagem5"/>
           </div>
-          <div className={estilos.vantagens}>
+          <div className={estilos.vantagens} data-test="Vantagens">
             <h2 data-test="vantagensBanco">Vantagens do nosso banco:</h2>
-            <div className={estilos.vantagens__itens}>
-              <div className={estilos.vantagens__item}>
+            <div className={estilos.vantagens__itens} data-test="divVantagensItens01">
+              <div className={estilos.vantagens__item} data-test="divVantagensItens02">
                 <img src={presente} alt="ícone de um presente" data-test="imagem1"/>
                 <h3 data-test="ContaCartao">Conta e cartão gratuitos</h3>
                 <p data-test="ContaDigital">
@@ -32,7 +32,7 @@ export default function Inicio() {
                   isso: sem tarifa de manutenção.
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
+              <div className={estilos.vantagens__item} data-test="divVantagensItens03">
                 <img src={saque} alt="ícone de uma mão segurando um dinheiro" data-test="imagem2"/>
                 <h3 data-test="saques">Saques sem custo</h3>
                 <p data-test="acesso24h">
@@ -40,7 +40,7 @@ export default function Inicio() {
                   24h.
                 </p>
               </div>
-              <div className={estilos.vantagens__item} data-test="Vantagens">
+              <div className={estilos.vantagens__item} data-test="divVantagensItens04" >
                 <img src={estrela} alt="ícone de uma estrela" data-test="imagem3" />
                 <h3 data-test="pontos">Programa de pontos</h3>
                 <p data-test="acumuloPontos">
@@ -48,7 +48,7 @@ export default function Inicio() {
                   pagar mensalidade!
                 </p>
               </div>
-              <div className={estilos.vantagens__item}>
+              <div className={estilos.vantagens__item} data-test="divVantagensItens05">
                 <img
                   src={dispositivo}
                   alt="ícone de um dispositivo como notebook"

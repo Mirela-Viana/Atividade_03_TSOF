@@ -37,5 +37,16 @@ describe('Página Inicial', () => {
     cy.getByData('acumuloPontos').contains('Você pode acumular pontos com suas compras no crédito sem pagar mensalidade!')
     cy.getByData('DispoMoveis').contains('Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
   })
+
+  it('Deve renderizar a div' , () => {
+    cy.getByData('divContainer').should('be.visible')
+    cy.getByData('divConteudo').should('be.visible')
+    cy.getByData('divBanner').should('be.visible')
+    cy.getByData('divVantagensItens01').should('be.visible')
+    cy.getByData('divVantagensItens02').should('be.visible')
+    cy.getByData('divVantagensItens03').should('be.visible')
+    cy.getByData('divVantagensItens04').should('be.visible')
+    //Funciona sem o .should('be.visible')
+  })
 })
 
