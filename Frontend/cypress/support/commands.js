@@ -28,7 +28,17 @@ Cypress.Commands.add('getByData', (seletor) => {
     return cy.get(`[data-test=${seletor}]`)
 })
 
-Cypress.Commands.add('containsText', (seletor, texto) => {
-    cy.get(seletor).should('contain', texto)
+// Cypress.Commands.add('containsText', (seletor, texto) => {
+//     cy.get(seletor).should('contains', texto)
+// })
+
+Cypress.Commands.add('containsText', (selector, text) => {
+    return cy.get(`[data-test=${selector}]`).contains(text)
 })
+
+Cypress.Commands.add('checkTextInVantagem', (seletor) => {
+    return cy.get(`[data-test=${seletor}]`).should('be.visible')
+})
+
+
 

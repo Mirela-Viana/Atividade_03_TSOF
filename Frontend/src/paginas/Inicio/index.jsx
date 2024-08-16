@@ -24,7 +24,7 @@ export default function Inicio() {
           <div className={estilos.vantagens}>
             <h2>Vantagens do nosso banco:</h2>
             <div className={estilos.vantagens__itens}>
-              <div className={estilos.vantagens__item}>
+              <div className={estilos.vantagens__item} data-test="Vantagens">
                 <img src={presente} alt="ícone de um presente" />
                 <h3>Conta e cartão gratuitos</h3>
                 <p>
