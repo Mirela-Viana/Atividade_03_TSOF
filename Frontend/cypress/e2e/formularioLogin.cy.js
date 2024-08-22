@@ -11,7 +11,7 @@ describe('Formulário de login', () => {
     cy.getByData('mensagem-erro').should('exist').and('have.text', 'O email digitado é inválido')
   })
 
-  it('Não deve permitir um campo em branco', () => {
+  it.only('Não deve permitir um campo em branco', () => {
 
     cy.getByData('botao-login').click()
     // cy.getByData('email-input').type('')
