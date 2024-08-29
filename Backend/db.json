@@ -349,6 +349,20 @@
       "data": "29/08/2024",
       "mes": "Agosto",
       "id": 50
+    },
+    {
+      "transacao": "Transferência",
+      "valor": "80",
+      "data": "29/08/2024",
+      "mes": "Agosto",
+      "id": 51
+    },
+    {
+      "transacao": "Depósito",
+      "valor": "80",
+      "data": "29/08/2024",
+      "mes": "Agosto",
+      "id": 52
     }
   ],
   "saldo": {
